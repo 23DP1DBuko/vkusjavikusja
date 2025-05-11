@@ -203,3 +203,30 @@ body {
         margin: 16px;
     }
 }
+
+.lined-paper {
+    position: relative;
+    padding: 20px;
+    background: white;
+    font-family: 'Arial', sans-serif;
+    line-height: 2; /* Расстояние между строками */
+    border: 1px solid #ccc; /* Рамка для эффекта */
+}
+
+.lined-paper p {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.lined-paper p::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: #d3d3d3; /* Цвет линии */
+    z-index: -1;
+}

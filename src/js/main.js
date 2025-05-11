@@ -36,7 +36,7 @@ document.querySelectorAll('.button').forEach(button => {
             '--z-before': 0,
             duration: .2,
             onComplete() {
-                particles(button.querySelector('.emitter'), 100, -2, -8, -80, -50);
+                particles(button.querySelector('.emitter'), 100, -2, -80, -150, 0);
                 gsap.to(button, {
                     '--icon-x': 0,
                     '--icon-y': 0,
@@ -62,12 +62,12 @@ function particles(parent, quantity, x, y, minAngle, maxAngle) {
     ];
     for (let i = quantity - 1; i >= 0; i--) {
         let angle = gsap.utils.random(minAngle, maxAngle),
-            velocity = gsap.utils.random(70, 140),
+            velocity = gsap.utils.random(100, 200),
             img = document.createElement('img'); // Create an <img> element
         img.src = images[Math.floor(gsap.utils.random(0, images.length))]; // Randomly select an image
         img.style.position = 'absolute'; // Ensure the image is positioned correctly
-        img.style.width = '40px'; // Set a default size (adjust as needed)
-        img.style.height = '40px'; // Set a default size (adjust as needed)
+        img.style.width = '100px'; // Set a default size (adjust as needed)
+        img.style.height = '100px'; // Set a default size (adjust as needed)
         parent.appendChild(img); // Append the image to the parent element
         gsap.set(img, {
             opacity: 0,
@@ -85,7 +85,7 @@ function particles(parent, quantity, x, y, minAngle, maxAngle) {
                 opacity: 1,
             }, 0)
             .to(img, {
-                duration: 1.8,
+                duration: 5,
                 rotationX: `-=${gsap.utils.random(720, 1440)}`,
                 rotationZ: `+=${gsap.utils.random(720, 1440)}`,
                 physics2D: {
