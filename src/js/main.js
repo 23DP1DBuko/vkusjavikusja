@@ -1,6 +1,6 @@
-// filepath: /workspaces/vkusjavikusja/src/js/main.js
-import { gsap } from "../../node_modules/gsap/index.js";
-import { Physics2DPlugin } from "../../node_modules/gsap/Physics2DPlugin.js";
+
+import { gsap } from "https://cdn.skypack.dev/gsap";
+import { Physics2DPlugin } from "https://cdn.skypack.dev/gsap/Physics2DPlugin";
 
 gsap.registerPlugin(Physics2DPlugin);
 
