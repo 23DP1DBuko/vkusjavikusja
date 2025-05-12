@@ -58,7 +58,7 @@ function particles(parent, quantity, x, y, minAngle, maxAngle) {
     '/src/images/ogbuda1.png',
     '/src/images/ogbuda2.png',
     '/src/images/ogbuda3.png',
-    '/src/images/ogbuda4.png',
+    '../images/ogbuda4.png',
 ];
     for (let i = quantity - 1; i >= 0; i--) {
         let angle = gsap.utils.random(minAngle, maxAngle),
