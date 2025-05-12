@@ -55,9 +55,9 @@ document.querySelectorAll('.button').forEach(button => {
 
 function particles(parent, quantity, x, y, minAngle, maxAngle) {
     let images = [
-    '/src/images/ogbuda1.png',
-    '/src/images/ogbuda2.png',
-    '/src/images/ogbuda3.png',
+    '../images/ogbuda1.png',
+    '../images/ogbuda2.png',
+    '../images/ogbuda3.png',
     '../images/ogbuda4.png',
 ];
     for (let i = quantity - 1; i >= 0; i--) {
