@@ -264,3 +264,8 @@ section {
         padding: 10vh 5vw;
     }
 }
+@media screen and (max-width: 500px) {
+    .lined-paper {
+        padding: 15vh 5vw;
+    }
+}

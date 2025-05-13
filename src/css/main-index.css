@@ -304,11 +304,21 @@ section + section {
 
 .photo-slider {
     position: relative;
-    max-width: 50%;
+    min-width: 60%;
+    max-width: 80%;
     margin: 60px;
     overflow: hidden;
 }
-
+@media screen and (max-width: 1200px) {
+    .photo-slider {
+        left: 10%;
+        margin: 0 auto;
+        margin-top: 60px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+}
 .slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
@@ -330,32 +340,31 @@ section + section {
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    font-size: 18px;
-    padding: 12px 12px 12px 18px;
-    width: 50px;
-    height: 50px;
+    font-size: 1.5vw;
+    padding: 1vw 1vw 1vw 1.5vw;
+    width: 4vw;
+    height: 4vw;
     cursor: pointer;
-    border-radius: 25px;
+    border-radius: 50%;
     z-index: 10;
 }
 
 .prev {
-    left: 20px;
-    transition:all 0.5s ease;
+    left: 2vw;
+    transition: all 0.5s ease;
 }
 
 .prev:hover {
-    left: 0px;
+    left: 1vw;
 }
 
-
 .next {
-    right: 20px;
-    transition:all 0.5s ease;
+    right: 2vw;
+    transition: all 0.5s ease;
 }
 
 .next:hover {
-    right: 0px;
+    right: 1vw;
 }
 
 .slider {
