@@ -55,10 +55,10 @@ document.querySelectorAll('.button').forEach(button => {
 
 function particles(parent, quantity, x, y, minAngle, maxAngle) {
     let images = [
-    '/src/images/ogbuda1.png',
-    '/src/images/ogbuda2.png',
-    '/src/images/ogbuda3.png',
-    '/src/images/ogbuda4.png',
+    'src/images/ogbuda1.png',
+    'src/images/ogbuda2.png',
+    'src/images/ogbuda3.png',
+    'src/images/ogbuda4.png',
 ];
     for (let i = quantity - 1; i >= 0; i--) {
         let angle = gsap.utils.random(minAngle, maxAngle),
