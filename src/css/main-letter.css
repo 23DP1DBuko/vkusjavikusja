@@ -251,7 +251,6 @@ header {
 section {
     position:   relative;
     top: 100px;
-    width: 60%;
     box-sizing: border-box;
 }
 
