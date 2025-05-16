@@ -9,7 +9,6 @@ body {
     justify-content: center;
     font-family: 'Inter', Arial;
     background: #ecc9c957;
-    width: 100%;
 }
 
 
@@ -204,6 +203,7 @@ body {
 .lined-text {
     position: relative;
     width: 90%;
+    left: 6px;
     margin: 0 auto;
 }
 
@@ -251,6 +251,7 @@ header {
 section {
     position:   relative;
     top: 100px;
+    width: 900px;
     box-sizing: border-box;
 }
 
